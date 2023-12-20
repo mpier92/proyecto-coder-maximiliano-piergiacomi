@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Pagina de Contacto -->
+
+<!-- Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
+    <header>
+        <nav class="nav__container">
+    
+            <!-- aca va el logo, por ahora solo pongo mi nombre-->
+            <a class="nav__brand" href="./index.html">
+                <h2>Maximiliano Piergiacomi</h2>
+            </a>
+    
+            <!-- lista del navbar de acceso a las distintas secciones -->
+            <ul class="nav__lista">
+                <li class="nav__item">
+                    <a class="nav__link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./sobremi.html">Sobre mi</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./herramientas.html">Herramientas</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <a class="nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf" target="_blank">Descargar
+                CV</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--Titulo del Formulario  -->
+        <section>
+            <h1>Contacto</h1>
+            <p>Puedes enviarme un mensaje a traves del siguiente formulario</p>
+
+                    <!--Formulario de contacto  -->
+            <form action="">
+                <div>
+                    <label for="nombre-contacto">Nombre completo</label>
+                    <input type="text" id="nombre-contacto" placeholder="Nombre Apellido">
+                </div>
+                <div>
+                    <label for="correo-contacto">Correo</label>
+                    <input type="email" id="correo-contacto" placeholder="Ejemplo@correo.com">
+                </div>
+                <div>
+                    <label for="mensaje-contacto">Mensaje</label>
+                    <textarea name="" id="mensaje-contacto" cols="30" rows="10" placeholder="Puedes escribir aquí tu mensaje"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+
+        <!-- imagen -->
+        <section>
+            <img src="../imagenes/perfil.png" alt="">
+        </section>
+    </main>
+
+        <!-- Aca comienza el footer -->
+<footer class="footer">
+    <nav class="footer__links">
+        <!-- Me queda pendiente añadir una imagen de logo -->
+        <ul class="footer__lista">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./sobremi.html">Sobre mi</a></li>
+            <li><a href="./proyectos.html">Proyectos</a></li>
+            <li><a href="./herramientas.html">Herramientas</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- contenedor principal de las redes -->
+    <div class="footer__redes">
+        <div class="footer__contenedor">
+            <img class="img__redes" src="../imagenes/linkedin.svg" alt="linkedin">
+            <h4>LinkedIn</h4>
+        </div>
+        <div class="footer__contenedor">
+            <img class="img__redes" src="../imagenes/behance.svg" alt="behance">
+            <h4>Behance</h4>
+        </div>
+        <div class="footer__contenedor">
+            <img class="img__redes" src="../imagenes/instagram.svg" alt="instagram">
+            <h4>Instagram</h4>
+        </div>
+        <div class="footer__contenedor">
+            <img class="img__redes" src="../imagenes/correo.svg" alt="gmail">
+            <h4>Correo</h4>
+        </div>
+    </div>
+
+    <!-- copy -->
+    <div class="footer__copy">
+        <p>&copy; 2023 Maximiliano Piergiacomi</p>
+    </div>
+</footer>
+</body>
+</html>
