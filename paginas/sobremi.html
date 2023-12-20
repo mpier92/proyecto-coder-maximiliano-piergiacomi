@@ -3,9 +3,15 @@
 <!-- Pagina sobre mi -->
 
 <!-- Head -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Palanquin:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../estilos/styles.css">
     <title>Sobre mi</title>
 </head>
@@ -45,28 +51,29 @@
 
     <!-- Inicio del main -->
     <main>
-
         <!-- Seccion principal del sitio -->
-        <section>
-            <div>
+        <section class="sobremi">
+            <div class="sobremi__texto">
                 <h5>Aprende un poco más</h5>
                 <h1>Sobre mi</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus porttitor quis nisl turpis eget
-                    vulputate turpis at. Et ut cras rutrum viverra. Non vel amet, pharetra, faucibus viverra mi
-                    sollicitudin id mattis. Aliquet sed viverra dictum nunc ultrices dui dictum ut sagittis. Lacus nunc
-                    sed in et vitae ornare elementum.</p>
+                <p>Soy Maximiliano Piergiacomi Diseñador UX/UI y descubri mi pasion por el diseño luego de un largo
+                    camino, en esta seccion quiero contarte de como llegue a encontrar mi pasion y como cada paso me
+                    ayudo a formar parte de lo que soy</p>
             </div>
-            <div>
+            <div class="sobremi__img">
                 <img src="../imagenes/sobremi.png" alt="imagen de perfil de Maximiliano Piergiacomi">
             </div>
         </section>
 
-        <section>
+        <section class="sobremi__formacion">
             <h2>Formacion</h2>
             <!-- Primaria -->
-            <article>
-                <img src="../imagenes/iconoredondo.png" alt="icono educacion">
-                <h3>Primaria</h3>
+            <article class="sobremi__academica">
+                <div class="academica__titulo">
+                    <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
+                    <h3>Primaria</h3>
+                </div>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit dolorem omnis. Officiis
                     cupiditate velit explicabo magnam nihil natus vel dolore facere? Quae praesentium quaerat, aperiam
                     quas necessitatibus voluptatem, dicta culpa repudiandae vero accusantium, cumque vitae. Ab, culpa?
@@ -74,9 +81,11 @@
                 </p>
             </article>
             <!-- Secundaria -->
-            <article>
-                <img src="../imagenes/iconoredondo.png" alt="icono educacion">
-                <h3>Secundaria</h3>
+            <article class="sobremi__academica">
+                <div class="academica__titulo">
+                    <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
+                    <h3>Secundaria</h3>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit dolorem omnis. Officiis
                     cupiditate velit explicabo magnam nihil natus vel dolore facere? Quae praesentium quaerat, aperiam
                     quas necessitatibus voluptatem, dicta culpa repudiandae vero accusantium, cumque vitae. Ab, culpa?
@@ -84,9 +93,11 @@
                 </p>
             </article>
             <!-- universitaria -->
-            <article>
-                <img src="../imagenes/iconoredondo.png" alt="icono educacion">
-                <h3>Uiversitaria</h3>
+            <article class="sobremi__academica">
+                <div class="academica__titulo">
+                    <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
+                    <h3>Uiversitaria</h3>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit dolorem omnis. Officiis
                     cupiditate velit explicabo magnam nihil natus vel dolore facere? Quae praesentium quaerat, aperiam
                     quas necessitatibus voluptatem, dicta culpa repudiandae vero accusantium, cumque vitae. Ab, culpa?
@@ -96,14 +107,15 @@
         </section>
 
         <!-- tramo de formacion como diseñador -->
-        <section>
+        <section class="sobremi__design">
             <h2>Formacion como Diseñador UX/UI</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi reprehenderit
                 dolorem odio facere quam hic, ipsum cum necessitatibus enim sit accusantium numquam molestias iure
                 dolore voluptates saepe excepturi aspernatur facilis totam cumque nisi molestiae. Quia est minus ut eos
                 eligendi corporis hic quo fuga, dicta iure, velit incidunt laudantium consequuntur soluta consequatur
                 error ipsa, fugit nulla enim nesciunt repudiandae doloremque corrupti aliquid! Et totam veritatis
-                tempora in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi reprehenderit
+                tempora in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi
+                reprehenderit
                 dolorem odio facere quam hic, ipsum cum necessitatibus enim sit accusantium numquam molestias iure
                 dolore voluptates saepe excepturi aspernatur facilis totam cumque nisi molestiae. Quia est minus ut eos
                 eligendi corporis hic quo fuga, dicta iure, velit incidunt laudantium consequuntur soluta consequatur
@@ -112,39 +124,83 @@
         </section>
 
         <!-- Cursos realizados -->
-        <section>
-            <article>
-                <img src="../imagenes/iconocuadrado.png" alt="icono coderhouse">
-                <h4>Coderhouse</h4>
-                <h3>Curso photoshop e illustrator</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi reprehenderit
-                    dolorem odio facere quam hic, ipsum cum necessitatibus enim sit accusantium numquam molestias iure
-                    dolore voluptates saepe excepturi aspernatur facilis totam cumque nisi molestiae. Quia est minus ut eos
-                    eligendi corporis hic quo fuga, dicta iure, velit incidunt laudantium consequuntur soluta consequatur
-                    error ipsa, fugit nulla enim nesciunt repudiandae doloremque corrupti aliquid! Et totam veritatis
-                    tempora in.</p>
+        <section class="cursos">
+            <h2>Cursos</h2>
+
+
+            <article class="sobremi__cursos">
+                <!-- certificado del curso -->
+                <img class="certificado" src="../imagenes/certificadopsil.png" alt="icono coderhouse">
+                <!-- titulo del curso -->
+                <div>
+                    <h4>Coderhouse</h4>
+                    <h3>Curso photoshop e illustrator</h3>
+                </div>
+                <!-- descripcion del curso -->
+                <p>El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                    En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
+                    aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
+                    a un problema existente.
+                    <br>
+                    <br>
+                    Realice mi proyecto de una guarderia de mascotas, utilizando
+                    las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con la
+                    herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para poder
+                    mostrar de que manera se podria utilizar la marca.
+                    <br>
+                    <br>
+                    Entre en el top 10 en este curso.
+                </p>
             </article>
-            <article>
-                <img src="../imagenes/iconocuadrado.png" alt="icono coderhouse">
-                <h4>Coderhouse</h4>
-                <h3>Curso Diseño UX/UI</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi reprehenderit
-                    dolorem odio facere quam hic, ipsum cum necessitatibus enim sit accusantium numquam molestias iure
-                    dolore voluptates saepe excepturi aspernatur facilis totam cumque nisi molestiae. Quia est minus ut eos
-                    eligendi corporis hic quo fuga, dicta iure, velit incidunt laudantium consequuntur soluta consequatur
-                    error ipsa, fugit nulla enim nesciunt repudiandae doloremque corrupti aliquid! Et totam veritatis
-                    tempora in.</p>
+
+
+
+            <article class="sobremi__cursos">
+                <img class="certificado" src="../imagenes/certificadodiseño.png" alt="icono coderhouse">
+
+                <div>
+                    <h4>Coderhouse</h4>
+                    <h3>Curso Diseño UX/UI</h3>
+                </div>
+                <!-- descripcion del curso -->
+                <p>El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                    En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
+                    aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
+                    a un problema existente.
+                    <br>
+                    <br>
+                    Realice mi proyecto de una guarderia de mascotas, utilizando
+                    las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con la
+                    herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para poder
+                    mostrar de que manera se podria utilizar la marca.
+                    <br>
+                    <br>
+                    Entre en el top 10 en este curso.
+                </p>
             </article>
-            <article>
-                <img src="../imagenes/iconocuadrado.png" alt="icono coderhouse">
-                <h4>Coderhouse</h4>
-                <h3>Curso Diseño UX/UI Avanzado</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi reprehenderit
-                    dolorem odio facere quam hic, ipsum cum necessitatibus enim sit accusantium numquam molestias iure
-                    dolore voluptates saepe excepturi aspernatur facilis totam cumque nisi molestiae. Quia est minus ut eos
-                    eligendi corporis hic quo fuga, dicta iure, velit incidunt laudantium consequuntur soluta consequatur
-                    error ipsa, fugit nulla enim nesciunt repudiandae doloremque corrupti aliquid! Et totam veritatis
-                    tempora in.</p>
+
+
+            <article class="sobremi__cursos">
+                <img class="certificado" src="../imagenes/certificadodiseñoavanzado.png" alt="icono coderhouse">
+                <div>
+                    <h4>Coderhouse</h4>
+                    <h3>Curso Diseño UX/UI Avanzado</h3>
+                </div>
+                <!-- descripcion del curso -->
+                <p>El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                    En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
+                    aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
+                    a un problema existente.
+                    <br>
+                    <br>
+                    Realice mi proyecto de una guarderia de mascotas, utilizando
+                    las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con la
+                    herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para poder
+                    mostrar de que manera se podria utilizar la marca.
+                    <br>
+                    <br>
+                    Entre en el top 10 en este curso.
+                </p>
             </article>
         </section>
     </main>
@@ -188,4 +244,5 @@
         </div>
     </footer>
 </body>
+
 </html>
