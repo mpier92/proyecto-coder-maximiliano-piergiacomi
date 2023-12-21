@@ -15,6 +15,7 @@ a {
 
 img {
     width: 100%;
+    max-width: 25rem;
 }
 
 p{
@@ -60,7 +61,7 @@ body {
     justify-content:flex-start;
     width: 100%;
     min-height: 5rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0rem 0rem 0.5rem 0.5rem;
     background: #C9D6FF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -584,3 +585,122 @@ body {
 }
 }
 
+.proyecto__presentacion{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+
+    margin: 8rem 2rem 4rem 2rem ;
+    padding: 1rem;
+}
+
+.proyecto__img{
+    max-width: 25rem;
+    min-width: 5rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.proyecto__iconos{
+    grid-column: 1/2;
+    margin: auto;
+    
+}
+.icono{
+    max-width: 2rem;
+}
+
+.proyecto__intro{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos__contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 4, 1fr);
+    padding: 2rem;
+    margin: 2rem;
+    gap: 2rem;
+    align-items: end;
+}
+
+.proyecto__boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25rem;
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+    color: whitesmoke;
+    background: #7F5AF0;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.50);
+}
+
+.proyecto__tarjeta{
+    max-width:25rem ;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.proyecto__tarjeta__texto{
+    padding: 0rem 1rem 1.5rem 1rem;
+}
+
+@media (min-width:768px) {
+
+.proyecto__presentacion{
+    display: grid;
+    grid-template-columns: 2;
+    grid-row: 1fr 2fr 1fr;
+}
+.proyecto__img{
+    grid-row: 2;
+    grid-column: 1;
+    max-height: 16rem;
+}
+
+.proyecto__iconos{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.proyecto__intro{
+    grid-row: 2;
+    grid-column: 2;
+    max-width: 30rem;
+}
+
+.proyectos__contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1;
+    max-height: 40rem;
+}
+
+.proyecto__tarjeta{
+    min-height: 33rem;
+
+}
+
+.proyecto__tarjeta__texto{
+
+margin-bottom: auto;
+}
+
+.proyecto__boton{
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+}
