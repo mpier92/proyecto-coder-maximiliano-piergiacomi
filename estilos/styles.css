@@ -17,7 +17,29 @@ img {
     width: 100%;
 }
 
+p{
+    font-family: 'Palanquin', sans-serif;
+}
 
+h1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+}
 /* ---- estilos pagina index ---- */
 
 
@@ -34,21 +56,14 @@ body {
 
 /* --- contenedor principal de la navbar ---- */
 .nav__container {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-
+    justify-content:flex-start;
     width: 100%;
-    height: 5rem;
+    min-height: 5rem;
     padding: 2rem;
-
     border-radius: 0rem 0rem 0.5rem 0.5rem;
     background: #C9D6FF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-    position: fixed;
 }
 
 /* ---- icono | brand | nombre de la pagina ---- */
@@ -59,36 +74,26 @@ body {
     gap: 0.5rem;
     text-decoration: none;
     color: #303030;
-
 }
 
 /* ---- lista de la nav ---- */
+@media (min-width:768px) {
+
 .nav__lista {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    max-width: 100%;
-    gap: 1rem;
+    justify-content:flex-end;
+    margin-left:auto;
+    margin-right: auto;
+    gap:2rem;
 }
 
-/* --- items de la lista --- */
-.nav__item {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    min-width: 4rem;
 }
-
 /* -- links de la lista del nav -- */
 .nav__link {
     text-decoration: none;
     color: #303030;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    min-width: max-content;
 }
 
 /* ---- boton de la nav ---- */
@@ -100,7 +105,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-
     border-radius: 1rem;
     background: #AFECD2;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
@@ -114,9 +118,12 @@ body {
 }
 
 .nav__link:hover {
-    color: #E2E2E2;
+    color: #a72293;
 }
 
+.pagina__activa{
+    color: #a72293;
+}
 
 /* ---- estructura del body ---- */
 
@@ -483,3 +490,97 @@ body {
     border-radius: 0.25rem;
     max-width: 400px;
 }
+
+/* media queri de seccion sobre mi */
+@media (min-width:768px) {
+
+    .sobremi{
+        display: flex;
+        flex-direction: row;
+        margin: 10rem 5rem 5rem 5rem;
+        padding: 5rem;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
+
+    .sobremi__texto{
+        max-width: 25rem;
+    }
+
+    /* formacion */
+.sobremi__formacion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0,25fr 1fr;
+    padding: 5rem;
+    margin: 5rem;
+}
+
+.sobremi__formacion h2{
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.primaria{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.secundaria{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.universitaria{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* sobre mi carrera de diseño */
+.sobremi__design{
+    margin: 5rem;
+    padding: 3rem 5rem 3rem 5rem;
+}
+
+
+.cursos{
+    /* display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 2; */
+    padding: 2rem;
+    margin: 5rem;
+    border-radius: 2rem;
+    background-color: #742ACE
+}
+
+.sobremi__cursos{
+    max-height: 25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sobremi__cursos__titulo{
+    grid-row: 1;
+    grid-column: 2;
+    margin-right: auto;
+}
+.sobremi__cursos__subtitulo{
+    grid-row: 1;
+    grid-column: 1;
+}
+.sobremi__cursos__parrafo{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.certificado{
+    grid-row: 2;
+    grid-column: 1;
+}
+}
+
