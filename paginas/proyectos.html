@@ -9,60 +9,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Palanquin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Palanquin:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../estilos/styles.css">
     <title>Proyectos</title>
 </head>
 
 
 <body>
-<!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
-<header>
-    <nav class="nav__container">
+    <!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
 
-        <!-- aca va el logo, por ahora solo pongo mi nombre-->
-        <a class="nav__brand" href="./index.html">
-            <h2>Maximiliano Piergiacomi</h2>
-        </a>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg nav__container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Maximiliano Piergiacomi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav   me-auto mb-2 mb-lg-0 nav__lista ">
+                        <li class="nav-item">
+                            <a class="nav-link nav__link " href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link" href="./sobremi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pagina__activa" aria-current="page"
+                                href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link" href="./herramientas.html">Herramientas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <a class="nav-item nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf"
+                        target="_blank">Descargar
+                        CV</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <!-- lista del navbar de acceso a las distintas secciones -->
-        <ul class="nav__lista">
-            <li class="nav__item">
-                <a class="nav__link" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="./sobremi.html">Sobre mi</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="./proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="./herramientas.html">Herramientas</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
-        <a class="nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf" target="_blank">Descargar
-            CV</a>
-    </nav>
-</header>
+    <!-- Aqui comienza el main -->
+    <main>
 
-<!-- Aqui comienza el main -->
-<main>
+        <section class="proyecto__presentacion">
 
-    <section>
-        <div>
-            <img src="../imagenes/proyectos.png" alt="foto de Maximiliano Piergiacomi">
-            <img src="../imagenes/behance.svg" alt="icono de behance">
-            <img src="../imagenes/linkedin.svg" alt="icono de linkedin">
-            <img src="../imagenes/instagram.svg" alt="icono de instagram">
-            <img src="../imagenes/correo.svg" alt="icono de correo">
-        </div>
+            <img class="proyecto__img" src="../imagenes/proyectos.png" alt="foto de Maximiliano Piergiacomi">
 
-        <!-- seccion principal -->
-        <section>
-            <div>
+            <div class="proyecto__iconos">
+                <img class="icono" src="../imagenes/behance.svg" alt="icono de behance">
+                <img class="icono" src="../imagenes/linkedin.svg" alt="icono de linkedin">
+                <img class="icono" src="../imagenes/instagram.svg" alt="icono de instagram">
+                <img class="icono" src="../imagenes/correo.svg" alt="icono de correo">
+            </div>
+
+            <!-- seccion principal -->
+
+            <div class="proyecto__intro">
                 <h2>¿Por qué elegirme?</h2>
                 <p>Elegirme significa añadir a un profesional versátil con un historial que abarca desde estudiante y
                     deportista hasta emprendedor y trabajador dedicado. Mi enfoque apasionado en el Diseño UX/UI,
@@ -77,106 +90,119 @@
         </section>
 
         <!-- presentacion de proyectos -->
-        <section>
-            <h1>Proyectos</h1>
-        </section>
+        <h1>Proyectos</h1>
         <!-- Proyecto Gear -->
-        <section>
-            <article>
-                <div>
-                    <img src="../imagenes/tarjeta.png" alt="ejemplo de tarjeta">
-                </div>
-                <div>
+        <section class="proyectos__contenedor">
+
+            <article class="proyecto__tarjeta">
+                <img class="proyecto__img" src="../imagenes/gear.png" alt="caratula proyecto Gear">
+                <div class="proyecto__tarjeta__texto">
                     <h3>Proyecto Gear</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, hic voluptatem quaerat
-                        delectus asperiores voluptatibus?</p>
-                    <a href="">Ver proyecto</a>
+                    <p>Gear es un buscador de talleres mecánicos que busca facilitar la busqueda de talleres cercanos en
+                        cualquier momente y en cualquier lugar.</p>
                 </div>
+                <a class="proyecto__boton"
+                href="https://www.figma.com/proto/RGKzUb2Xw1pgnBic8nv5P0/Gear---Buscador-de-talleres?page-id=5%3A33564&type=design&node-id=25-29475&viewport=644%2C2060%2C0.35&t=pt5kWPb4VqAXjifS-1&scaling=min-zoom&starting-point-node-id=25%3A29475&mode=design"
+                target="_blank">Ver proyecto</a>
             </article>
-        </section>
 
-        <!-- Proyecto Discord:Rediseño -->
-        <section>
-            <article>
-                <div>
-                    <img src="../imagenes/tarjeta.png" alt="ejemplo de tarjeta">
+
+            <!-- Proyecto Discord:Rediseño -->
+
+            <article class="proyecto__tarjeta">
+                <div><img class="proyecto__img" src="../imagenes/discord.png" alt="caratula proyecto Rediseño Discord">
                 </div>
-                <div>
-                    <h3>Proyecto Discord</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, hic voluptatem quaerat
-                        delectus asperiores voluptatibus?</p>
-                    <a href="">Ver proyecto</a>
+                <div class="proyecto__tarjeta__texto">
+                    <h3>Proyecto Rediseño Discord</h3>
+                    <p>Propuesta de rediseño de la reconocida plataforma de comunicaciones "discord"</p>
                 </div>
+                <a class="proyecto__boton"
+                href="https://www.behance.net/gallery/180056669/Rediseno-Discord-Diseno-UXUI-Avanzado-Coderhouse"
+                target="_blank">Ver proyecto</a>
             </article>
-        </section>
 
-        <!-- Proyecto Pulso365 -->
-        <section>
-            <article>
+
+            <!-- Proyecto Pulso365 -->
+
+            <article class="proyecto__tarjeta">
                 <div>
-                    <img src="../imagenes/tarjeta.png" alt="ejemplod de tarjeta">
-                </div>
-                <div>
+                <img class="proyecto__img" src="../imagenes/pulso.png" alt="caratula proyecto Pulso365">
+            </div>
+                <div class="proyecto__tarjeta__texto">
                     <h3>Proyecto Pulso365</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, hic voluptatem quaerat
-                        delectus asperiores voluptatibus?</p>
-                    <a href="">Ver proyecto</a>
+                    <p>Propuesta de pagina web para Pulso365, una consultoria de negocios</p>
                 </div>
+                <a class="proyecto__boton"
+                href="https://www.figma.com/proto/eFaGaMxjcwCTfEK6xve1HQ/Memizorzin-wireframes?page-id=0%3A1&type=design&node-id=1713-5708&viewport=-873%2C-1545%2C0.13&t=UV7rVQoqiljrqYXN-1&scaling=contain&starting-point-node-id=1713%3A5708&show-proto-sidebar=1&mode=design"
+                target="_blank">Ver proyecto</a>
             </article>
-        </section>
 
-        <!-- Proyecto Pet Transity -->
-        <section>
-            <article>
+
+            <!-- Proyecto Pet Transity -->
+
+            <article class="proyecto__tarjeta">
                 <div>
-                    <img src="../imagenes/tarjeta.png" alt="ejemplo de tarjeta">
+                <img class="proyecto__img" src="../imagenes/pet transity.jpg" alt="caratula proyecto Rediseño Discord">
+            </div>
+                <div class="proyecto__tarjeta__texto">
+                    <h3>Proyecto Pet transity</h3>
+                    <p>Una webapp para los amantes de las mascotas que conecta usuarios interesados en dar transito con refugios para encontrar hogares temporales o permanentes a animales en situacion de calle</p>
                 </div>
-                <div>
-                    <h3>Proyecto Pet Transity</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, hic voluptatem quaerat
-                        delectus asperiores voluptatibus?</p>
-                    <a href="">Ver proyecto</a>
-                </div>
+                <a class="proyecto__boton"
+                href="-"
+                target="_blank">Ver proyecto</a>
             </article>
-        </section>
-</main>
-<!-- Aca comienza el footer -->
-<footer class="footer">
-    <nav class="footer__links">
-        <!-- Me queda pendiente añadir una imagen de logo -->
-        <ul class="footer__lista">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./sobremi.html">Sobre mi</a></li>
-            <li><a href="./proyectos.html">Proyectos</a></li>
-            <li><a href="./herramientas.html">Herramientas</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
 
-    <!-- contenedor principal de las redes -->
-    <div class="footer__redes">
-        <div class="footer__contenedor">
-            <img class="img__redes" src="../imagenes/linkedin.svg" alt="linkedin">
-            <h4>LinkedIn</h4>
-        </div>
-        <div class="footer__contenedor">
-            <img class="img__redes" src="../imagenes/behance.svg" alt="behance">
-            <h4>Behance</h4>
-        </div>
-        <div class="footer__contenedor">
-            <img class="img__redes" src="../imagenes/instagram.svg" alt="instagram">
-            <h4>Instagram</h4>
-        </div>
-        <div class="footer__contenedor">
-            <img class="img__redes" src="../imagenes/correo.svg" alt="gmail">
-            <h4>Correo</h4>
-        </div>
-    </div>
+    </main>
+    <!-- Aca comienza el footer -->
+    <footer class="footer">
+        <nav class="footer__links">
+            <!-- Me queda pendiente añadir una imagen de logo -->
+            <ul class="footer__lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobremi.html">Sobre mi</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./herramientas.html">Herramientas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <!-- copy -->
-    <div class="footer__copy">
-        <p>&copy; 2023 Maximiliano Piergiacomi</p>
-    </div>
-</footer>
+        <!-- contenedor principal de las redes -->
+        <div class="footer__redes">
+            <div class="footer__contenedor">
+                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="img__redes"
+                        src="../imagenes/linkedin.svg" alt="linkedin"></a>
+                <h4>LinkedIn</h4>
+                </a>
+            </div>
+            <div class="footer__contenedor">
+                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="img__redes"
+                        src="../imagenes/behance.svg" alt="behance"></a>
+                <h4>Behance</h4>
+            </div>
+            <div class="footer__contenedor">
+                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="img__redes"
+                        src="../imagenes/instagram.svg" alt="instagram"></a>
+                <h4>Instagram</h4>
+            </div>
+            <div class="footer__contenedor">
+                <a href="mailto:piergiacomi.m@gmail.com" target="_blank">
+                    <img class="img__redes" src="../imagenes/correo.svg" alt="gmail">
+                </a>
+                <h4>Correo</h4>
+            </div>
+        </div>
+
+
+        <!-- copy -->
+        <div class="footer__copy">
+            <p>&copy; 2023 Maximiliano Piergiacomi</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

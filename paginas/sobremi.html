@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Palanquin:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
     <title>Sobre mi</title>
 </head>
@@ -19,33 +21,37 @@
 <body class="oscuro">
     <!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
     <header>
-        <nav class="nav__container">
-
-            <!-- aca va el logo, por ahora solo pongo mi nombre-->
-            <a class="nav__brand" href="./index.html">
-                <h2>Maximiliano Piergiacomi</h2>
-            </a>
-
-            <!-- lista del navbar de acceso a las distintas secciones -->
-            <ul class="nav__lista">
-                <li class="nav__item">
-                    <a class="nav__link" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="./sobremi.html">Sobre mi</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="./proyectos.html">Proyectos</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="./herramientas.html">Herramientas</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <a class="nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf" target="_blank">Descargar
-                CV</a>
+        <nav class="navbar fixed-top navbar-expand-lg nav__container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Maximiliano Piergiacomi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav   me-auto mb-2 mb-lg-0 nav__lista ">
+                        <li class="nav-item">
+                            <a class="nav-link nav__link " href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagina__activa"  aria-current="page"  href="./sobremi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link" href="./herramientas.html">Herramientas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <a class="nav-item nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf"
+                    target="_blank">Descargar
+                    CV</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -64,11 +70,11 @@
                 <img src="../imagenes/sobremi.png" alt="imagen de perfil de Maximiliano Piergiacomi">
             </div>
         </section>
-
+        <!-- formacion academica -->
         <section class="sobremi__formacion">
             <h2>Formacion</h2>
             <!-- Primaria -->
-            <article class="sobremi__academica">
+            <article class="sobremi__academica primaria">
                 <div class="academica__titulo">
                     <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
                     <h3>Primaria</h3>
@@ -82,7 +88,7 @@
             </article>
             <!-- Secundaria -->
             <article class="sobremi__academica">
-                <div class="academica__titulo">
+                <div class="academica__titulo secundaria">
                     <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
                     <h3>Secundaria</h3>
                 </div>
@@ -93,7 +99,7 @@
                 </p>
             </article>
             <!-- universitaria -->
-            <article class="sobremi__academica">
+            <article class="sobremi__academica universitaria">
                 <div class="academica__titulo">
                     <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
                     <h3>Uiversitaria</h3>
@@ -132,12 +138,12 @@
                 <!-- certificado del curso -->
                 <img class="certificado" src="../imagenes/certificadopsil.png" alt="icono coderhouse">
                 <!-- titulo del curso -->
-                <div>
-                    <h4>Coderhouse</h4>
-                    <h3>Curso photoshop e illustrator</h3>
-                </div>
+
+                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
+                    <h3 class="sobremi__cursos__titulo">Curso photoshop e illustrator</h3>
+
                 <!-- descripcion del curso -->
-                <p>El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
                     En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
                     aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
                     a un problema existente.
@@ -158,12 +164,12 @@
             <article class="sobremi__cursos">
                 <img class="certificado" src="../imagenes/certificadodiseño.png" alt="icono coderhouse">
 
-                <div>
-                    <h4>Coderhouse</h4>
-                    <h3>Curso Diseño UX/UI</h3>
-                </div>
+
+                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
+                    <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI</h3>
+
                 <!-- descripcion del curso -->
-                <p>El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
                     En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
                     aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
                     a un problema existente.
@@ -182,12 +188,12 @@
 
             <article class="sobremi__cursos">
                 <img class="certificado" src="../imagenes/certificadodiseñoavanzado.png" alt="icono coderhouse">
-                <div>
-                    <h4>Coderhouse</h4>
-                    <h3>Curso Diseño UX/UI Avanzado</h3>
-                </div>
+                
+                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
+                    <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI Avanzado</h3>
+                
                 <!-- descripcion del curso -->
-                <p>El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
                     En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
                     aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
                     a un problema existente.
@@ -221,19 +227,25 @@
         <!-- contenedor principal de las redes -->
         <div class="footer__redes">
             <div class="footer__contenedor">
-                <img class="img__redes" src="../imagenes/linkedin.svg" alt="linkedin">
+                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="img__redes"
+                        src="../imagenes/linkedin.svg" alt="linkedin"></a>
                 <h4>LinkedIn</h4>
+                </a>
             </div>
             <div class="footer__contenedor">
-                <img class="img__redes" src="../imagenes/behance.svg" alt="behance">
+                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="img__redes"
+                        src="../imagenes/behance.svg" alt="behance"></a>
                 <h4>Behance</h4>
             </div>
             <div class="footer__contenedor">
-                <img class="img__redes" src="../imagenes/instagram.svg" alt="instagram">
+                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="img__redes"
+                        src="../imagenes/instagram.svg" alt="instagram"></a>
                 <h4>Instagram</h4>
             </div>
             <div class="footer__contenedor">
-                <img class="img__redes" src="../imagenes/correo.svg" alt="gmail">
+                <a href="mailto:piergiacomi.m@gmail.com" target="_blank">
+                    <img class="img__redes" src="../imagenes/correo.svg" alt="gmail">
+                </a>
                 <h4>Correo</h4>
             </div>
         </div>
@@ -243,6 +255,10 @@
             <p>&copy; 2023 Maximiliano Piergiacomi</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
