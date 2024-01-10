@@ -1,0 +1,115 @@
+/* ---- footer ---- */
+
+/* contenedor principal */
+.footer {
+    background-color: #303030;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: 1fr 0.5fr 0.25fr;
+    gap: 1rem;
+
+    align-items: center;
+
+    margin: auto;
+    width: 100%;
+    padding: 2rem;
+
+    /* contenedor de la lista de links */
+    &__links {
+        grid-row: 1;
+        grid-column: 1/4;
+        padding: auto;
+        color: $c-fprimario;
+    }
+
+    /* lista de links */
+    &__lista {
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 25rem ;
+        margin: auto;
+        padding: 1rem;
+        gap: 2rem;
+        list-style: disc;
+        text-decoration: none;
+        color: $c-fprimario;
+
+        a {
+            text-decoration: none;
+            color: $c-fprimario;
+        }
+    }
+
+    /* contenedor de las redes */
+    &__redes {
+        grid-row: 2;
+        grid-column: 1/4;
+        padding: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    &__contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 0.5rem;
+        min-width: 2rem;
+
+        h4 {
+            font-size: 1rem;
+            color: $c-fprimario;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        max-width: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__copy {
+        grid-column: 1/4;
+        grid-row: 3;
+        margin: auto;
+        color: $c-fprimario;
+        font-size:1rem;
+    }
+
+
+    @include MQ-md{
+        &__lista {
+            display: flex;
+            padding-top: 3.125rem;
+            gap: 4rem;
+            flex-wrap: nowrap;
+            max-width: 100%;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+        }
+
+        &__redes {
+            margin: auto;
+            gap: 4rem;
+        }
+        
+        &__img {
+            max-width: 3rem;
+        }
+
+        &__copy {
+            grid-column: 2;
+        }
+}
+}

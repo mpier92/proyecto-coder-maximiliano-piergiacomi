@@ -22,27 +22,30 @@
 
 <body>
     <!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
-
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg nav__container">
+        <nav class="navbar fixed-top navbar-expand-lg nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Maximiliano Piergiacomi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <a class="navbar-brand nav__brand" href="../index.html">Maximiliano Piergiacomi</a>
+
+                <!-- boton hamburguesa -->
+                <button class="navbar-toggler nav__menu" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- lista de links de navegacion -->
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav   me-auto mb-2 mb-lg-0 nav__lista ">
                         <li class="nav-item">
-                            <a class="nav-link nav__link " href="../index.html">Inicio</a>
+                            <a class="nav-link nav__link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__link" href="./sobremi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  pagina__activa" aria-current="page"
-                                href="./proyectos.html">Proyectos</a>
+                            <a class="nav-link nav__link-activa " aria-current="page" href="./proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__link" href="./herramientas.html">Herramientas</a>
@@ -51,6 +54,8 @@
                             <a class="nav-link nav__link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
+
+                    <!-- boton de descarga -->
                     <a class="nav-item nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf"
                         target="_blank">Descargar
                         CV</a>

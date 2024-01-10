@@ -18,24 +18,29 @@
     <title>Sobre mi</title>
 </head>
 
-<body class="oscuro">
+<body>
     <!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg nav__container">
+        <nav class="navbar fixed-top navbar-expand-lg nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Maximiliano Piergiacomi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+
+                <a class="navbar-brand nav__brand" href="../index.html">Maximiliano Piergiacomi</a>
+
+                <!-- boton hamburguesa -->
+                <button class="navbar-toggler nav__menu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- lista de links de navegacion -->
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav   me-auto mb-2 mb-lg-0 nav__lista ">
                         <li class="nav-item">
-                            <a class="nav-link nav__link " href="../index.html">Inicio</a>
+                            <a class="nav-link nav__link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pagina__activa"  aria-current="page"  href="./sobremi.html">Sobre mi</a>
+                            <a class="nav-link nav__link-activa " aria-current="page" href="./sobremi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__link" href="./proyectos.html">Proyectos</a>
@@ -47,13 +52,16 @@
                             <a class="nav-link nav__link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
+
+                    <!-- boton de descarga -->
                     <a class="nav-item nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf"
-                    target="_blank">Descargar
-                    CV</a>
+                        target="_blank">Descargar
+                        CV</a>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <!-- Inicio del main -->
     <main>
@@ -139,11 +147,12 @@
                 <img class="certificado" src="../imagenes/certificadopsil.png" alt="icono coderhouse">
                 <!-- titulo del curso -->
 
-                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
-                    <h3 class="sobremi__cursos__titulo">Curso photoshop e illustrator</h3>
+                <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
+                <h3 class="sobremi__cursos__titulo">Curso photoshop e illustrator</h3>
 
                 <!-- descripcion del curso -->
-                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como
+                    Desarrollador UX/UI.<br>
                     En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
                     aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
                     a un problema existente.
@@ -165,11 +174,12 @@
                 <img class="certificado" src="../imagenes/certificadodiseño.png" alt="icono coderhouse">
 
 
-                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
-                    <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI</h3>
+                <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
+                <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI</h3>
 
                 <!-- descripcion del curso -->
-                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como
+                    Desarrollador UX/UI.<br>
                     En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
                     aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
                     a un problema existente.
@@ -188,12 +198,13 @@
 
             <article class="sobremi__cursos">
                 <img class="certificado" src="../imagenes/certificadodiseñoavanzado.png" alt="icono coderhouse">
-                
-                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
-                    <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI Avanzado</h3>
-                
+
+                <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
+                <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI Avanzado</h3>
+
                 <!-- descripcion del curso -->
-                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
+                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como
+                    Desarrollador UX/UI.<br>
                     En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
                     aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
                     a un problema existente.
