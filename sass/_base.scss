@@ -109,3 +109,20 @@ body {
     font-size: 1rem;
     font-weight: 600;
 }
+
+.boton-secundario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25rem;
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+    color: $c-tprimario;
+    background: $c-bprimario;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.50);
+    font-family: $ff-exo;
+    font-size: 1rem;
+    font-weight: 600;
+}
