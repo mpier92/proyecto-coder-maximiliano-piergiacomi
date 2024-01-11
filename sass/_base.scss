@@ -11,7 +11,7 @@ $c-nav: #8660BF;
 
 // color de fondo de contenedores
 $c-fprimario: #FFF9FF;
-$c-fsecundario:#242424;
+$c-fsecundario: #242424;
 
 // color de botones
 $c-bprimario: #CFFF00;
@@ -21,7 +21,7 @@ $c-bsecundario: #222222;
 $c-ftarjeta: linear-gradient(180deg, #CDC4FF 0%, #F3E6FF 100%);
 
 // fondo de footer
-$c-footer:#262626;
+$c-footer: #262626;
 
 // color de textos
 $c-tprimario: #222222;
@@ -32,30 +32,15 @@ $c-h2: #1E1E1E;
 $c-h3: #151515;
 
 @mixin MQ-md {
-    @media (min-width:768px){
+    @media (min-width:768px) {
         @content;
     }
 }
 
-@mixin flex-center-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin flex-center-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin flex-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+@mixin MQ-lg {
+    @media(min-width:1024px) {
+        @content;
+    }
 }
 
 
@@ -76,7 +61,7 @@ img {
     max-height: 36.0625rem;
 }
 
-p{
+p {
     font-family: 'Palanquin', sans-serif;
 }
 
@@ -99,6 +84,7 @@ h4 {
     font-family: 'Exo 2', sans-serif;
     font-size: 1rem;
 }
+
 /* ---- estilos pagina index ---- */
 
 
@@ -107,3 +93,19 @@ body {
     background: linear-gradient(180deg, #FFFDE0 -2.34%, #FFF 100%);
 }
 
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25rem;
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+    color: $c-tsecundario;
+    background: $c-bsecundario;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.50);
+    font-family: $ff-exo;
+    font-size: 1rem;
+    font-weight: 600;
+}
