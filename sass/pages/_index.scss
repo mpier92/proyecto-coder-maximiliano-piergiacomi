@@ -60,11 +60,49 @@
         padding: 0rem 1rem 0rem 1rem;
     }
 
+
+    &__animacion {
+        -webkit-animation: __animacion 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: __animacion 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    @-webkit-keyframes __animacion {
+        0% {
+            -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes __animacion {
+        0% {
+            -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+
+
+
+
     @include MQ-md {
         flex-direction: row;
         padding: 8.75rem 10% 6.25rem 15%;
-        gap:0;
-        
+        gap: 0;
+
 
         &__texto {
             display: flex;
@@ -85,12 +123,43 @@
 
         &__parrafo {
             font-size: 1rem;
-            padding:0.25rem;
+            padding: 0.25rem;
         }
 
         &__img {
             max-width: 36.0625rem;
             min-width: 20rem;
+        }
+
+
+
+        &__animacion {
+            -webkit-animation: __animacion 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: __animacion 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @-webkit-keyframes __animacion {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+
+            100% {
+                -webkit-transform: translateX(100px);
+                transform: translateX(100px);
+            }
+        }
+
+        @keyframes __animacion {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+
+            100% {
+                -webkit-transform: translateX(100px);
+                transform: translateX(100px);
+            }
         }
     }
 }
