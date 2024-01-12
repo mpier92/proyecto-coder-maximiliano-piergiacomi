@@ -1069,6 +1069,15 @@ body {
     opacity: 1;
   }
 }
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  background: #222222;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
 .contacto {
   display: flex;
   flex-direction: column;
@@ -1076,8 +1085,7 @@ body {
   justify-content: center;
   padding: 8rem 1rem 4rem 1rem;
   gap: 2rem;
-  background: #222222;
-  color: #ffffff;
+  width: 100%;
 }
 .contacto__titulo {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -1133,6 +1141,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0rem 2rem 2rem 2rem;
+  width: 100%;
 }
 .cta__img {
   max-width: 15rem;
@@ -1144,6 +1153,15 @@ body {
   font-weight: 500;
   padding: 3rem 1rem 2rem 1rem;
   max-width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
