@@ -15,7 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/styles.css">
-    <title>Maximiliano Piergiacomi</title>
+    <title>Diseño UX | Maximiliano Piergiacomi - Portfolio de Experiencia de Usuario</title>
+    <meta name="description" content="Explora el portfolio de diseño UX de Maximiliano Piergiacomi. Descubre cómo transformo ideas en experiencias cautivadoras.">
 </head>
 
 <!-- Aqui comienza el body -->
@@ -23,18 +24,23 @@
 <body>
 
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg nav__container">
+        <nav class="navbar fixed-top navbar-expand-lg nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Maximiliano Piergiacomi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <a class="navbar-brand nav__brand" href="./index.html">Maximiliano Piergiacomi</a>
+
+                <!-- boton hamburguesa -->
+                <button class="navbar-toggler nav__menu" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- lista de links de navegacion -->
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav   me-auto mb-2 mb-lg-0 nav__lista ">
                         <li class="nav-item">
-                            <a class="nav-link pagina__activa " aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link nav__link-activa " aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__link ;" href="./paginas/sobremi.html">Sobre mi</a>
@@ -49,6 +55,8 @@
                             <a class="nav-link nav__link" href="./paginas/contacto.html">Contacto</a>
                         </li>
                     </ul>
+
+                    <!-- boton de descarga -->
                     <a class="nav-item nav__boton" href="./documentos/piergiacomimaximilianocv.pdf" type="pdf"
                         target="_blank">Descargar
                         CV</a>
@@ -60,23 +68,23 @@
 
 
     <!-- Aqui comienza el main, el cual en esta pagina va a estar conformado por un texto con un titulo, subtitulo y parrafo, un boton y una imagen a su izquierda -->
-    <main class="hero">
+    <main class="hero ">
         <!-- Portada. -->
         <section class="hero__texto">
-            <h2>Bienvenido a mi porfolio</h2>
-            <h1>Diseñador UX/UI</h1>
-            <p>Donde podrás ver mis distintos trabajos y experiencias.
-                También podrás ver mi CV haciendo clic en “Descargar CV"
-                Espero disfrutes de mi recorrido profesional. </p>
+            <h2 class="hero__subtitulo">Bienvenido a mi porfolio</h2>
+            <h1 class="hero__titulo">Diseñador UX/UI</h1>
+            <p class="hero__parrafo">Donde podrás ver mis distintos trabajos y experiencias.
+                <br>También podrás ver mi CV haciendo clic en “Descargar CV".
+                <br>Espero disfrutes de mi recorrido profesional. </p>
         </section>
         <!-- Imagen de portada. -->
-        <section class="hero__img">
-            <img src="./imagenes/Portada.png" alt="Foto de Maximiliano Piergiacomi">
+        <section class="hero__img hero__animacion">
+            <img src="./imagenes/index.png" alt="Foto de Maximiliano Piergiacomi">
         </section>
     </main>
 
     <footer class="footer">
-        <nav class="footer__links">
+        <div class="footer__links">
             <!-- Me queda pendiente añadir una imagen de logo -->
             <ul class="footer__lista">
                 <li><a href="./index.html">Inicio</a></li>
@@ -85,29 +93,29 @@
                 <li><a href="./paginas/herramientas.html">Herramientas</a></li>
                 <li><a href="./paginas/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
 
         <!-- contenedor principal de las redes -->
         <div class="footer__redes">
             <div class="footer__contenedor">
-                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="img__redes"
+                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="footer__img"
                         src="./imagenes/linkedin.svg" alt="linkedin"></a>
                 <h4>LinkedIn</h4>
                 </a>
             </div>
             <div class="footer__contenedor">
-                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="img__redes"
+                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="footer__img"
                         src="./imagenes/behance.svg" alt="behance"></a>
                 <h4>Behance</h4>
             </div>
             <div class="footer__contenedor">
-                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="img__redes"
+                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="footer__img"
                         src="./imagenes/instagram.svg" alt="instagram"></a>
                 <h4>Instagram</h4>
             </div>
             <div class="footer__contenedor">
                 <a href="mailto:piergiacomi.m@gmail.com" target="_blank">
-                    <img class="img__redes" src="./imagenes/correo.svg" alt="gmail">
+                    <img class="footer__img" src="./imagenes/correo.svg" alt="gmail">
                 </a>
                 <h4>Correo</h4>
             </div>

@@ -16,32 +16,40 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../estilos/styles.css">
-    <title>Proyectos</title>
+    <head>
+        <title>Proyectos de Diseño UX | Maximiliano Piergiacomi - Experiencias Innovadoras</title>
+        <meta name="description" content="Explora la galería de proyectos de diseño UX de Maximiliano Piergiacomi. Sumérgete en experiencias únicas y descubre cómo aborda los desafíos de diseño.">
+    </head>
+    
 </head>
 
 
 <body>
     <!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
-
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg nav__container">
+        <nav class="navbar fixed-top navbar-expand-lg nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Maximiliano Piergiacomi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <a class="navbar-brand nav__brand" href="../index.html">Maximiliano Piergiacomi</a>
+
+                <!-- boton hamburguesa -->
+                <button class="navbar-toggler nav__menu" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- lista de links de navegacion -->
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav   me-auto mb-2 mb-lg-0 nav__lista ">
                         <li class="nav-item">
-                            <a class="nav-link nav__link " href="../index.html">Inicio</a>
+                            <a class="nav-link nav__link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__link" href="./sobremi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  pagina__activa" aria-current="page"
+                            <a class="nav-link nav__link-activa " aria-current="page"
                                 href="./proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav-item">
@@ -51,6 +59,8 @@
                             <a class="nav-link nav__link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
+
+                    <!-- boton de descarga -->
                     <a class="nav-item nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf"
                         target="_blank">Descargar
                         CV</a>
@@ -62,101 +72,112 @@
     <!-- Aqui comienza el main -->
     <main>
 
-        <section class="proyecto__presentacion">
+        <section class="presentacion">
 
-            <img class="proyecto__img" src="../imagenes/proyectos.png" alt="foto de Maximiliano Piergiacomi">
+            <img class="presentacion__img fade-in" src="../imagenes/proyectos.png" alt="foto de Maximiliano Piergiacomi">
 
-            <div class="proyecto__iconos">
-                <img class="icono" src="../imagenes/behance.svg" alt="icono de behance">
-                <img class="icono" src="../imagenes/linkedin.svg" alt="icono de linkedin">
-                <img class="icono" src="../imagenes/instagram.svg" alt="icono de instagram">
-                <img class="icono" src="../imagenes/correo.svg" alt="icono de correo">
+            <div class="presentacion__iconos">
+                <img class="presentacion__icono-tamaño" src="../imagenes/behance.svg" alt="icono de behance">
+                <img class="presentacion__icono-tamaño" src="../imagenes/linkedin.svg" alt="icono de linkedin">
+                <img class="presentacion__icono-tamaño" src="../imagenes/instagram.svg" alt="icono de instagram">
+                <img class="presentacion__icono-tamaño" src="../imagenes/correo.svg" alt="icono de correo">
             </div>
 
             <!-- seccion principal -->
 
-            <div class="proyecto__intro">
-                <h2>¿Por qué elegirme?</h2>
-                <p>Elegirme significa añadir a un profesional versátil con un historial que abarca desde estudiante y
+            <div class="presentacion__intro">
+                <h2 class="presentacion__intro-titulo">¿Por qué elegirme?</h2>
+                <p class="presentacion__intro-texto">Elegirme significa añadir a un profesional versátil con un
+                    historial que abarca desde estudiante y
                     deportista hasta emprendedor y trabajador dedicado. Mi enfoque apasionado en el Diseño UX/UI,
                     respaldado por una formación sólida, se traduce en liderazgo, disciplina y un constante deseo de
-                    aprendizaje.
+                    aprendizaje. <br> <br>
                     Soy más que un profesional; soy un colaborador comprometido con el crecimiento constante, listo para
                     llevar el Diseño UX/UI a nuevos niveles.
-                    En resumen, aporto versatilidad, pasión y compromiso a su equipo.
-                    Mi CV ofrece detalles precisos sobre mis habilidades, formación y experiencia. Estoy preparado para
-                    agregar un toque único a su proyecto.</p>
+                    <br> En resumen, aporto versatilidad, pasión y compromiso a su equipo.
+                    <br><br>Mi CV ofrece detalles precisos sobre mis habilidades, formación, experiencia y estoy
+                    preparado para
+                    agregar un toque único a su proyecto.
+                </p>
             </div>
         </section>
 
         <!-- presentacion de proyectos -->
-        <h1>Proyectos</h1>
-        <!-- Proyecto Gear -->
-        <section class="proyectos__contenedor">
 
-            <article class="proyecto__tarjeta">
-                <img class="proyecto__img" src="../imagenes/gear.png" alt="caratula proyecto Gear">
-                <div class="proyecto__tarjeta__texto">
-                    <h3>Proyecto Gear</h3>
-                    <p>Gear es un buscador de talleres mecánicos que busca facilitar la busqueda de talleres cercanos en
-                        cualquier momente y en cualquier lugar.</p>
+        <!-- Proyecto Gear -->
+        <section class="proyectos">
+
+            <h1 class="proyectos__titulo fade-in ">Proyectos</h1>
+
+            <article class="tarjeta__gear swing-in-top-fwd">
+                <!-- imagen -->
+                <img class="tarjeta__gear-img" src="../imagenes/gear.png" alt="caratula proyecto Gear">
+                <!-- contenido -->
+                <div class="tarjeta__gear-contenido">
+                    <h3 class="tarjeta__gear-titulo">Proyecto Gear</h3>
+                    <p class="tarjeta__gear-texto">Creación de app de Búsqueda de talleres mecánicos por ubicacion y calificacion.</p>
                 </div>
-                <a class="proyecto__boton"
-                href="https://www.figma.com/proto/RGKzUb2Xw1pgnBic8nv5P0/Gear---Buscador-de-talleres?page-id=5%3A33564&type=design&node-id=25-29475&viewport=644%2C2060%2C0.35&t=pt5kWPb4VqAXjifS-1&scaling=min-zoom&starting-point-node-id=25%3A29475&mode=design"
-                target="_blank">Ver proyecto</a>
+                <!-- boton -->
+                <a class="tarjeta__gear-boton boton"
+                    href="https://www.figma.com/proto/RGKzUb2Xw1pgnBic8nv5P0/Gear---Buscador-de-talleres?page-id=5%3A33564&type=design&node-id=25-29475&viewport=644%2C2060%2C0.35&t=pt5kWPb4VqAXjifS-1&scaling=min-zoom&starting-point-node-id=25%3A29475&mode=design"
+                    target="_blank">Ver proyecto</a>
             </article>
 
 
             <!-- Proyecto Discord:Rediseño -->
 
-            <article class="proyecto__tarjeta">
-                <div><img class="proyecto__img" src="../imagenes/discord.png" alt="caratula proyecto Rediseño Discord">
+            <article class="tarjeta__discord swing-in-top-fwd">
+                <!-- imagen -->
+                <img class="tarjeta__discord-img" src="../imagenes/discord.png"
+                    alt="caratula proyecto Rediseño Discord">
+                <!-- contenido -->
+                <div class="tarjeta__discord-contenido">
+                    <h3 class="tarjeta__discord-titulo">Rediseño Discord</h3>
+                    <p class="tarjeta__discord-texto">Propuesta de rediseño para la plataforma de comunicación Discord.
+                    </p>
                 </div>
-                <div class="proyecto__tarjeta__texto">
-                    <h3>Proyecto Rediseño Discord</h3>
-                    <p>Propuesta de rediseño de la reconocida plataforma de comunicaciones "discord"</p>
-                </div>
-                <a class="proyecto__boton"
-                href="https://www.behance.net/gallery/180056669/Rediseno-Discord-Diseno-UXUI-Avanzado-Coderhouse"
-                target="_blank">Ver proyecto</a>
+                <!-- boton -->
+                <a class="tarjeta__discord-boton boton"
+                    href="https://www.behance.net/gallery/180056669/Rediseno-Discord-Diseno-UXUI-Avanzado-Coderhouse"
+                    target="_blank">Ver proyecto</a>
             </article>
 
 
             <!-- Proyecto Pulso365 -->
 
-            <article class="proyecto__tarjeta">
-                <div>
-                <img class="proyecto__img" src="../imagenes/pulso.png" alt="caratula proyecto Pulso365">
-            </div>
-                <div class="proyecto__tarjeta__texto">
-                    <h3>Proyecto Pulso365</h3>
-                    <p>Propuesta de pagina web para Pulso365, una consultoria de negocios</p>
+            <article class="tarjeta__pulso365 swing-in-top-fwd">
+                <!-- imagen -->
+                    <img class="tarjeta__pulso365-img" src="../imagenes/pulso.png" alt="caratula proyecto Pulso365">
+                <!-- contenido -->
+                <div class="tarjeta__pulso365-contenido">
+                    <h3 class="tarjeta__pulso365-titulo">Proyecto Pulso365</h3>
+                    <p class="tarjeta__pulso365-texto">Creación de pagina web para consultoría de negocios.</p>
                 </div>
-                <a class="proyecto__boton"
-                href="https://www.figma.com/proto/eFaGaMxjcwCTfEK6xve1HQ/Memizorzin-wireframes?page-id=0%3A1&type=design&node-id=1713-5708&viewport=-873%2C-1545%2C0.13&t=UV7rVQoqiljrqYXN-1&scaling=contain&starting-point-node-id=1713%3A5708&show-proto-sidebar=1&mode=design"
-                target="_blank">Ver proyecto</a>
+                <!-- boton -->
+                <a class="tarjeta__pulso365-boton boton"
+                    href="https://www.figma.com/proto/eFaGaMxjcwCTfEK6xve1HQ/Memizorzin-wireframes?page-id=0%3A1&type=design&node-id=1713-5708&viewport=-873%2C-1545%2C0.13&t=UV7rVQoqiljrqYXN-1&scaling=contain&starting-point-node-id=1713%3A5708&show-proto-sidebar=1&mode=design"
+                    target="_blank">Ver proyecto</a>
             </article>
 
 
             <!-- Proyecto Pet Transity -->
 
-            <article class="proyecto__tarjeta">
-                <div>
-                <img class="proyecto__img" src="../imagenes/pet transity.jpg" alt="caratula proyecto Rediseño Discord">
-            </div>
-                <div class="proyecto__tarjeta__texto">
-                    <h3>Proyecto Pet transity</h3>
-                    <p>Una webapp para los amantes de las mascotas que conecta usuarios interesados en dar transito con refugios para encontrar hogares temporales o permanentes a animales en situacion de calle</p>
+            <article class="tarjeta__pet swing-in-top-fwd">
+
+                    <img class="tarjeta__pet-img" src="../imagenes/pet transity.jpg"
+                        alt="caratula proyecto Rediseño Discord">
+
+                <div class="tarjeta__pet-contenido">
+                    <h3 class="tarjeta__pet-titulo">Proyecto Pet transity</h3>
+                    <p class="tarjeta__pet-texto">Creación de Web-App para facilitar el transito de animales en sin hogar.</p>
                 </div>
-                <a class="proyecto__boton"
-                href="-"
-                target="_blank">Ver proyecto</a>
+                <a class="tarjeta__pet-boton boton" href="-" target="_blank">Ver proyecto</a>
             </article>
 
     </main>
     <!-- Aca comienza el footer -->
     <footer class="footer">
-        <nav class="footer__links">
+        <div class="footer__links">
             <!-- Me queda pendiente añadir una imagen de logo -->
             <ul class="footer__lista">
                 <li><a href="../index.html">Inicio</a></li>
@@ -165,29 +186,29 @@
                 <li><a href="./herramientas.html">Herramientas</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
 
         <!-- contenedor principal de las redes -->
         <div class="footer__redes">
             <div class="footer__contenedor">
-                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="img__redes"
+                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="footer__img"
                         src="../imagenes/linkedin.svg" alt="linkedin"></a>
                 <h4>LinkedIn</h4>
                 </a>
             </div>
             <div class="footer__contenedor">
-                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="img__redes"
+                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="footer__img"
                         src="../imagenes/behance.svg" alt="behance"></a>
                 <h4>Behance</h4>
             </div>
             <div class="footer__contenedor">
-                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="img__redes"
+                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="footer__img"
                         src="../imagenes/instagram.svg" alt="instagram"></a>
                 <h4>Instagram</h4>
             </div>
             <div class="footer__contenedor">
                 <a href="mailto:piergiacomi.m@gmail.com" target="_blank">
-                    <img class="img__redes" src="../imagenes/correo.svg" alt="gmail">
+                    <img class="footer__img" src="../imagenes/correo.svg" alt="gmail">
                 </a>
                 <h4>Correo</h4>
             </div>

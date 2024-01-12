@@ -15,27 +15,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
-    <title>Sobre mi</title>
+    <head>
+        <title>Sobre Mí | Maximiliano Piergiacomi - Diseñador UX - Formación</title>
+        <meta name="description" content="Conoce la formación Maximiliano Piergiacomi como diseñador UX. Descubre cómo está preparado para crear soluciones innovadoras.">
+    </head>
+    
 </head>
 
-<body class="oscuro">
+<body>
     <!-- El header va a funcionar como navbar del sitio, solo cambia el estilo segun la pagina. -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg nav__container">
+        <nav class="navbar fixed-top navbar-expand-lg nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Maximiliano Piergiacomi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+
+                <a class="navbar-brand nav__brand" href="../index.html">Maximiliano Piergiacomi</a>
+
+                <!-- boton hamburguesa -->
+                <button class="navbar-toggler nav__menu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- lista de links de navegacion -->
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav   me-auto mb-2 mb-lg-0 nav__lista ">
                         <li class="nav-item">
-                            <a class="nav-link nav__link " href="../index.html">Inicio</a>
+                            <a class="nav-link nav__link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pagina__activa"  aria-current="page"  href="./sobremi.html">Sobre mi</a>
+                            <a class="nav-link nav__link-activa " aria-current="page" href="./sobremi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__link" href="./proyectos.html">Proyectos</a>
@@ -47,173 +56,201 @@
                             <a class="nav-link nav__link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
+
+                    <!-- boton de descarga -->
                     <a class="nav-item nav__boton" href="../documentos/piergiacomimaximilianocv.pdf" type="pdf"
-                    target="_blank">Descargar
-                    CV</a>
+                        target="_blank">Descargar
+                        CV</a>
                 </div>
             </div>
         </nav>
     </header>
 
+
     <!-- Inicio del main -->
-    <main>
+    <main class="sobremi__fondo">
         <!-- Seccion principal del sitio -->
         <section class="sobremi">
             <div class="sobremi__texto">
-                <h5>Aprende un poco más</h5>
-                <h1>Sobre mi</h1>
-                <p>Soy Maximiliano Piergiacomi Diseñador UX/UI y descubri mi pasion por el diseño luego de un largo
+                <h5 class="sobremi__subtitulo">Aprende un poco más</h5>
+                <h1 class="sobremi__titulo">Sobre mi</h1>
+                <p class="sobremi__parrafo">Soy Maximiliano Piergiacomi Diseñador UX/UI y descubri mi pasion por el
+                    diseño luego de un largo
                     camino, en esta seccion quiero contarte de como llegue a encontrar mi pasion y como cada paso me
                     ayudo a formar parte de lo que soy</p>
             </div>
-            <div class="sobremi__img">
+            <div class="sobremi__img animacion">
                 <img src="../imagenes/sobremi.png" alt="imagen de perfil de Maximiliano Piergiacomi">
             </div>
         </section>
+
+
+
         <!-- formacion academica -->
         <section class="sobremi__formacion">
-            <h2>Formacion</h2>
-            <!-- Primaria -->
-            <article class="sobremi__academica primaria">
-                <div class="academica__titulo">
-                    <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
-                    <h3>Primaria</h3>
-                </div>
+            <h2 class="sobremi__formacion-titulo">Formacion</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit dolorem omnis. Officiis
-                    cupiditate velit explicabo magnam nihil natus vel dolore facere? Quae praesentium quaerat, aperiam
-                    quas necessitatibus voluptatem, dicta culpa repudiandae vero accusantium, cumque vitae. Ab, culpa?
-                    Voluptatum voluptatibus quae perspiciatis esse beatae adipisci molestias rem et, soluta possimus.
+
+            <!-- Primaria -->
+            <article class="sobremi__primaria">
+                <h3 class="sobremi__primaria-titulo">Primaria</h3>
+                <p class="sobremi__primaria-texto">Realice mis estudios primarios en la escuela agraria N° 10 en Los
+                    Talas, un colegio con doble escolaridad.
                 </p>
             </article>
+
+
             <!-- Secundaria -->
-            <article class="sobremi__academica">
-                <div class="academica__titulo secundaria">
-                    <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
-                    <h3>Secundaria</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit dolorem omnis. Officiis
-                    cupiditate velit explicabo magnam nihil natus vel dolore facere? Quae praesentium quaerat, aperiam
-                    quas necessitatibus voluptatem, dicta culpa repudiandae vero accusantium, cumque vitae. Ab, culpa?
-                    Voluptatum voluptatibus quae perspiciatis esse beatae adipisci molestias rem et, soluta possimus.
+            <article class="sobremi__secundaria">
+                <h3 class="sobremi__secundaria-titulo ">Secundaria</h3>
+                <p class="sobremi__secundaria-texto">Finalice mis estudios secundarios en la Escuela de Enseñanza
+                    Tecnica N° 2 de Berisso.<br>
+                    Aqui me forme como tecnico electromecanico, realizando pasantias en la universidad tecnologica
+                    nacional de La Plata (UTN) y siendo parte de las pasantias del plan de fortalecimiento de escuelas
+                    tecnicas que ofrecia Ternium Siderar en donde se realizaban los talleres en la planta metalurgica de
+                    Ensenada.
+                    <br>Egrese en el año 2009 con un promedio de 8,11.
                 </p>
             </article>
+
+
             <!-- universitaria -->
-            <article class="sobremi__academica universitaria">
-                <div class="academica__titulo">
-                    <img class="sobremi__icono" src="../imagenes/iconoredondo.png" alt="icono educacion">
-                    <h3>Uiversitaria</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit dolorem omnis. Officiis
-                    cupiditate velit explicabo magnam nihil natus vel dolore facere? Quae praesentium quaerat, aperiam
-                    quas necessitatibus voluptatem, dicta culpa repudiandae vero accusantium, cumque vitae. Ab, culpa?
-                    Voluptatum voluptatibus quae perspiciatis esse beatae adipisci molestias rem et, soluta possimus.
+            <article class="sobremi__universitaria">
+                <h3 class="sobremi__universitaria-titulo">Uiversitaria</h3>
+                <p class="sobremi__universitaria-texto">En el año 2009 me inscribi en la UTN en la carrera de
+                    Ingrenieria Industrial, hasta el 2013. <br>Durante el año 2013/2014 Entre formalmente a trabajar en
+                    Ternium con turnos rotativos, por lo que estudiar de manera presencial fue sumamente dificil, lo que
+                    me llevo a tomar la decision de cambiar de carrera a Administracion de empresas en la Universidad
+                    Siglo 21. llegando a 4to año quedandome pendiente todo el ultimo año. <br>
                 </p>
             </article>
         </section>
+
 
         <!-- tramo de formacion como diseñador -->
         <section class="sobremi__design">
-            <h2>Formacion como Diseñador UX/UI</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi reprehenderit
-                dolorem odio facere quam hic, ipsum cum necessitatibus enim sit accusantium numquam molestias iure
-                dolore voluptates saepe excepturi aspernatur facilis totam cumque nisi molestiae. Quia est minus ut eos
-                eligendi corporis hic quo fuga, dicta iure, velit incidunt laudantium consequuntur soluta consequatur
-                error ipsa, fugit nulla enim nesciunt repudiandae doloremque corrupti aliquid! Et totam veritatis
-                tempora in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis voluptatem sequi
-                reprehenderit
-                dolorem odio facere quam hic, ipsum cum necessitatibus enim sit accusantium numquam molestias iure
-                dolore voluptates saepe excepturi aspernatur facilis totam cumque nisi molestiae. Quia est minus ut eos
-                eligendi corporis hic quo fuga, dicta iure, velit incidunt laudantium consequuntur soluta consequatur
-                error ipsa, fugit nulla enim nesciunt repudiandae doloremque corrupti aliquid! Et totam veritatis
-                tempora in.</p>
+            <h2 class="sobremi__design-titulo">Formacion como Diseñador UX/UI</h2>
+            <p class="sobremi__design-texto">En el año 2022 descubri mi pasion por el Diseño UX/UI, desde ese entonces
+                mi camino por el mundo del diseño es toda una aventura. <br> <br>
+                En Agosto del 2022 me inscribo en la carrera de Desarrollador UX/UI en coderhouse iniciando con el curso
+                e Photoshop e Illustrator, aprendiendo a utilizar las herramientas (un poco antes de la integracion de
+                la inteligencia artificial dentro de las mismas) y llevando a cabo un proyecto. <br> <br> En Noviembre
+                de ese año inicio inicio mi curso de Diseño UX/UI. En este curso aprendi las bases que me ayudaron en mi
+                formacion como diseñador. <br>
+                Al finalizar el curso, junto con un grupo de compañeros iniciamos dos proyectos, Aula Equis y Foo
+                Talent, siendo el Diseñador UX/UI principal del equipo en donde llevamos a cabo tareas de investigacion
+                y desarrollo desde cero de ambos proyectos.
+                <br> <br>En Abril del 2023 inicie mi curso de Diseño UX/UI Avanzado, en donde profundece aun mas mis
+                conocimientos, los cuales pude ir aplicando en los proyectos de Aula Equis y Foo Talent.
+                <br>En este curso realice la propuesta de rediseño de la plataforma de comunicaciones Discord.
+                <br> <br>En Agosto del 2023 iniciamos el primer proyecto de Foo talent de manera grupal luego de meses
+                de planificacion, participe como diseñador UX/UI del proyecto de Pulso365, una consultora de negocios,
+                Realizando la investigacion de usuarios y llevando a cabo el diseño mientras coordinaba el equipo de
+                diseñadores.
+                <br> <br>En Octubre tuve mi primer trabajo freelance, realizando el diseño UI la plataforma Pet Transity
+                <br> <br>En Noviembre inicie mi ultimo curso de la carrera, Desarrollo Web.
+            </p>
         </section>
 
+
+
         <!-- Cursos realizados -->
-        <section class="cursos">
-            <h2>Cursos</h2>
+        <section class="sobremi__contenedor">
+            <h2 class="sobremi__contenedor-titulo">Cursos</h2>
+
+            <div class="sobremi__contenedor-cursos">
+                <article class="sobremi__cursopei">
+                    <!-- certificado del curso -->
+                    <img class="sobremi__cursopei-certificado" src="../imagenes/certificadopsil.png"
+                        alt="icono coderhouse">
+                    <!-- titulo del curso -->
+                    <h3 class="sobremi__cursopei-titulo">Curso photoshop e illustrator</h3>
+
+                    <!-- descripcion del curso -->
+                    <p class="sobremi__cursopei-parrafo">El primer curso en el trayecto para la certificacion como
+                        Desarrollador UX/UI.<br>
+                        En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
+                        aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una
+                        solucion
+                        a un problema existente.
+                        <br>
+                        <br>
+                        Realice mi proyecto de una guarderia de mascotas, utilizando
+                        las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con
+                        la
+                        herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para
+                        poder
+                        mostrar de que manera se podria utilizar la marca.
+                        <br>
+                        <br>
+                        Entre en el top 10 en este curso.
+                    </p>
+                </article>
 
 
-            <article class="sobremi__cursos">
-                <!-- certificado del curso -->
-                <img class="certificado" src="../imagenes/certificadopsil.png" alt="icono coderhouse">
-                <!-- titulo del curso -->
 
-                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
-                    <h3 class="sobremi__cursos__titulo">Curso photoshop e illustrator</h3>
-
-                <!-- descripcion del curso -->
-                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
-                    En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
-                    aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
-                    a un problema existente.
-                    <br>
-                    <br>
-                    Realice mi proyecto de una guarderia de mascotas, utilizando
-                    las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con la
-                    herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para poder
-                    mostrar de que manera se podria utilizar la marca.
-                    <br>
-                    <br>
-                    Entre en el top 10 en este curso.
-                </p>
-            </article>
+                <article class="sobremi__cursoux">
+                    <img class="sobremi__cursoux-certificado" src="../imagenes/certificadodiseño.png"
+                        alt="icono coderhouse">
 
 
+                    <h3 class="sobremi__cursoux-titulo">Curso Diseño UX/UI</h3>
 
-            <article class="sobremi__cursos">
-                <img class="certificado" src="../imagenes/certificadodiseño.png" alt="icono coderhouse">
-
-
-                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
-                    <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI</h3>
-
-                <!-- descripcion del curso -->
-                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
-                    En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
-                    aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
-                    a un problema existente.
-                    <br>
-                    <br>
-                    Realice mi proyecto de una guarderia de mascotas, utilizando
-                    las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con la
-                    herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para poder
-                    mostrar de que manera se podria utilizar la marca.
-                    <br>
-                    <br>
-                    Entre en el top 10 en este curso.
-                </p>
-            </article>
+                    <!-- descripcion del curso -->
+                    <p class="sobremi__cursoux-parrafo">El Segundo curso en el trayecto para la certificacion como
+                        Desarrollador UX/UI.<br>
+                        En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
+                        aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una
+                        solucion
+                        a un problema existente.
+                        <br>
+                        <br>
+                        Realice mi proyecto de una guarderia de mascotas, utilizando
+                        las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con
+                        la
+                        herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para
+                        poder
+                        mostrar de que manera se podria utilizar la marca.
+                        <br>
+                        <br>
+                        Entre en el top 10 en este curso.
+                    </p>
+                </article>
 
 
-            <article class="sobremi__cursos">
-                <img class="certificado" src="../imagenes/certificadodiseñoavanzado.png" alt="icono coderhouse">
-                
-                    <h4 class="sobremi__cursos__subtitulo">Coderhouse</h4>
-                    <h3 class="sobremi__cursos__titulo">Curso Diseño UX/UI Avanzado</h3>
-                
-                <!-- descripcion del curso -->
-                <p class="sobremi__cursos__parrafo">El primer curso en el trayecto para la certificacion como Desarrollador UX/UI.<br>
-                    En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
-                    aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una solucion
-                    a un problema existente.
-                    <br>
-                    <br>
-                    Realice mi proyecto de una guarderia de mascotas, utilizando
-                    las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con la
-                    herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para poder
-                    mostrar de que manera se podria utilizar la marca.
-                    <br>
-                    <br>
-                    Entre en el top 10 en este curso.
-                </p>
-            </article>
+                <article class="sobremi__cursouxa">
+                    <img class="sobremi__cursouxa-certificado" src="../imagenes/certificadodiseñoavanzado.png"
+                        alt="icono coderhouse">
+
+                    <h3 class="sobremi__cursouxa-titulo">Curso Diseño UX/UI Avanzado</h3>
+
+                    <!-- descripcion del curso -->
+                    <p class="sobremi__cursouxa-parrafo">El primer curso en el trayecto para la certificacion como
+                        Desarrollador UX/UI.<br>
+                        En este curso aprendi a utilizar las herramientas del pack de Adobe illustrator y photoshop
+                        aplicandolas en el proceso de creacion de un branding, pensandolo desde la creacion de una
+                        solucion
+                        a un problema existente.
+                        <br>
+                        <br>
+                        Realice mi proyecto de una guarderia de mascotas, utilizando
+                        las herramientas de illustrator realice la creacion del logo y la presentacion, mietras que con
+                        la
+                        herramieta de photoshop utilice imagenes para ilustrar el proyecto y una serie de mockups para
+                        poder
+                        mostrar de que manera se podria utilizar la marca.
+                        <br>
+                        <br>
+                        Entre en el top 10 en este curso.
+                    </p>
+                </article>
+            </div>
         </section>
     </main>
 
     <!-- Aca comienza el footer -->
     <footer class="footer">
-        <nav class="footer__links">
+        <div class="footer__links">
             <!-- Me queda pendiente añadir una imagen de logo -->
             <ul class="footer__lista">
                 <li><a href="../index.html">Inicio</a></li>
@@ -222,29 +259,29 @@
                 <li><a href="./herramientas.html">Herramientas</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
 
         <!-- contenedor principal de las redes -->
         <div class="footer__redes">
             <div class="footer__contenedor">
-                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="img__redes"
+                <a href="https://www.linkedin.com/in/maxipier92/" target="_blank"><img class="footer__img"
                         src="../imagenes/linkedin.svg" alt="linkedin"></a>
                 <h4>LinkedIn</h4>
                 </a>
             </div>
             <div class="footer__contenedor">
-                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="img__redes"
+                <a href="https://www.behance.net/maximilpiergia" target="_blank"><img class="footer__img"
                         src="../imagenes/behance.svg" alt="behance"></a>
                 <h4>Behance</h4>
             </div>
             <div class="footer__contenedor">
-                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="img__redes"
+                <a href="https://www.instagram.com/entendiendoux/" target="_blank"><img class="footer__img"
                         src="../imagenes/instagram.svg" alt="instagram"></a>
                 <h4>Instagram</h4>
             </div>
             <div class="footer__contenedor">
                 <a href="mailto:piergiacomi.m@gmail.com" target="_blank">
-                    <img class="img__redes" src="../imagenes/correo.svg" alt="gmail">
+                    <img class="footer__img" src="../imagenes/correo.svg" alt="gmail">
                 </a>
                 <h4>Correo</h4>
             </div>
