@@ -901,7 +901,7 @@ body {
     min-height: 5rem;
   }
   .presentacion__intro {
-    margin: 0rem 10rem 0rem 10rem;
+    margin: 0rem 1rem 0rem 1rem;
   }
   .proyectos {
     display: grid;
@@ -968,7 +968,7 @@ body {
     grid-column: 1;
   }
   .presentacion__intro {
-    grid-row: 2/4;
+    grid-row: 1/4;
     grid-column: 2;
   }
   .proyectos {
@@ -1145,6 +1145,7 @@ body {
 }
 .cta__img {
   max-width: 15rem;
+  padding-top: 2rem;
 }
 .cta__img-texto {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -1161,6 +1162,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  .contenedor .cta__img {
+    padding-top: 4rem;
   }
 }
 
