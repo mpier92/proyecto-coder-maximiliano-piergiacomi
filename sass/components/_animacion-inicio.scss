@@ -1,0 +1,55 @@
+
+
+$animationSpeed: 10s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-7.5rem * 5 ))}
+}
+
+
+// Styling
+.slider {
+	// background: $c-fprimario;
+	// box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: auto;
+	margin: auto;
+    padding-bottom: 5rem;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 20);
+	}
+	
+	.slide {
+		height: 100;
+		width: 7.5rem;
+        margin-left: 5rem;
+	}
+}
