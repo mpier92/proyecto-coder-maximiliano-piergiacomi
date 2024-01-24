@@ -1,0 +1,127 @@
+.herramientas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    background:$c-fsecundario;
+    color: $c-tsecundario;
+
+    &__img{
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    &__titulo{
+        padding-top: 2rem;
+        font-size: 3.5rem;
+        font-weight: 00;
+        font-family: $ff-fira;
+        text-align: center;
+        color: $c-bprimario;
+    }
+
+    &__texto{
+        padding: 0rem 2rem 2rem 2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.recomendaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+
+    &__contenedor{
+        background: $c-ftarjeta;
+        padding-bottom: 10rem;
+    }
+
+    &__titulo{
+        font-family: $ff-fira;
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 2rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    &__descripcion{
+        padding: 1rem 2rem 2rem 2rem;
+        font-family: $ff-palanquin;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+
+    &__libro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $c-fprimario;
+        border-radius: 1rem;
+        margin: 1rem;
+
+        &-img{
+            max-width: 15rem;
+            object-fit: cover;
+            padding: 2rem 0rem 2rem 0rem;
+        }
+        &-titulo{
+            font-family: $ff-fira;
+            font-size: 1.5rem;
+            padding: 1rem 2rem 1rem 2rem;
+            text-align: center;
+        }
+        
+        &-descripcion{
+            padding: 0rem 3rem 4rem 3rem;
+            font-family: $ff-palanquin;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        &-barra{
+                width: 100%; 
+                border: none;
+                height: 1px; 
+                background-color: $c-bsecundario; 
+                padding: 0rem 2rem 0rem 2rem;
+        }
+    }
+
+    &__canal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $c-fsecundario;
+        color: $c-tsecundario;
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        &-img{
+            height: 15rem;
+            object-fit: cover;
+            padding: 1rem;
+        }
+        &-titulo{
+            font-family: $ff-fira;
+            font-size: 2.5rem;
+            padding: 1rem 2rem 1rem 2rem;
+            text-align: center;
+        }
+        
+        &-descripcion{
+            padding: 0rem 3rem 1rem 3rem;
+            font-family: $ff-palanquin;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+}

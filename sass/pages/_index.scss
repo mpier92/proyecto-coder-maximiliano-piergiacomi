@@ -42,7 +42,7 @@
     &__parrafo {
         color: $c-tparrafo;
         font-family: $ff-palanquin;
-        font-size: 0.875rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -106,7 +106,7 @@
 
         &__texto {
             display: flex;
-            width: 35.25rem;
+            width: 35rem;
             flex-direction: column;
             align-items: flex-start;
             gap: 0.25rem;
@@ -114,16 +114,19 @@
         }
 
         &__subtitulo {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
+            font-weight: 700;
         }
 
         &__titulo {
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
 
         &__parrafo {
             font-size: 1rem;
             padding: 0.25rem;
+            font-weight: 700;
+            line-height: 1.5;
         }
 
         &__img {
