@@ -11,11 +11,11 @@ $animationSpeed: 10s;
 
 // Styling
 .slider {
-	// background: $c-fprimario;
-	// box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	background: $c-fsecundario;
 	height: auto;
 	margin: auto;
-    padding-bottom: 5rem;
+	padding-top: 2rem;
+    padding-bottom: 2.5rem;
 	overflow:hidden;
 	position: relative;
 	width: 100%;
@@ -48,8 +48,10 @@ $animationSpeed: 10s;
 	}
 	
 	.slide {
-		height: 100;
-		width: 7.5rem;
+		max-height: 2.5rem;
+		max-width: 8rem;
         margin-left: 5rem;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
 	}
 }
