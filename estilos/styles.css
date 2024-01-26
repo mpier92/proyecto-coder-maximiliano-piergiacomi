@@ -757,6 +757,8 @@ body {
     row-gap: 0rem;
     padding: 4rem;
     margin: 4rem;
+    align-items: center;
+    justify-items: center;
   }
   .sobremi__formacion-titulo {
     font-size: 2.5rem;
